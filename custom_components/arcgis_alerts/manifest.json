@@ -1,0 +1,12 @@
+{
+  "domain": "arcgis_alerts",
+  "name": "ArcGIS Alerts",
+  "codeowners": ["@vilemaxim"],
+  "config_flow": true,
+  "documentation": "https://github.com/vilemaxim/ha-arcgis-alerts",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/vilemaxim/ha-arcgis-alerts/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
