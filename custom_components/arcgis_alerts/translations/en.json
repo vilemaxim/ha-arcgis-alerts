@@ -1,0 +1,77 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add an ArcGIS layer",
+        "description": "Pick a known layer, or point at any ArcGIS feature layer of polygons.",
+        "data": {
+          "preset": "Layer"
+        }
+      },
+      "preset": {
+        "title": "Name and location",
+        "description": "The sensor turns on when a feature of {layer_url} covers this location. By default the location stays in Home Assistant: the layer's in-effect features are downloaded and checked here.",
+        "data": {
+          "name": "Name",
+          "location": "Location"
+        }
+      },
+      "custom": {
+        "title": "Custom layer",
+        "description": "Give the URL of an ArcGIS FeatureServer or MapServer layer of polygons, ending in the layer number (for example `.../FeatureServer/0`). By default the location stays in Home Assistant: features matching the where clause are downloaded and checked here.",
+        "data": {
+          "name": "Name",
+          "layer_url": "Layer URL",
+          "where": "Where clause",
+          "title_field": "Title field",
+          "device_class": "Device class",
+          "location": "Location"
+        },
+        "data_description": {
+          "where": "An SQL filter the layer applies, such as `Status = 'active'`. `1=1` matches every feature.",
+          "title_field": "The field whose value of the first matching feature becomes the sensor's `title` attribute. Optional."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the layer.",
+      "invalid_layer": "The URL did not answer as an ArcGIS layer.",
+      "not_polygon": "The layer's geometry is not polygons.",
+      "no_query": "The layer does not allow queries.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This layer, filter, and location are already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ArcGIS Alerts options",
+        "data": {
+          "scan_interval_minutes": "Poll interval",
+          "where": "Where clause",
+          "location": "Location",
+          "query_mode": "Query mode"
+        },
+        "data_description": {
+          "query_mode": "Local keeps the location in Home Assistant. Server sends the location to the layer's host, for layers too large to download."
+        }
+      }
+    }
+  },
+  "selector": {
+    "preset": {
+      "options": {
+        "swbno_boil_water": "SWBNO boil water advisory (New Orleans)",
+        "custom": "Custom layer"
+      }
+    },
+    "query_mode": {
+      "options": {
+        "local": "Local: download features, check the location in Home Assistant",
+        "server": "Server: send the location to the layer's host"
+      }
+    }
+  }
+}

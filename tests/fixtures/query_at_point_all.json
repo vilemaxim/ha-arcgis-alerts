@@ -1,0 +1,568 @@
+{
+ "objectIdFieldName": "OBJECTID",
+ "uniqueIdField": {
+  "name": "OBJECTID",
+  "isSystemMaintained": true
+ },
+ "globalIdFieldName": "GlobalID",
+ "geometryProperties": {
+  "shapeAreaFieldName": "Shape__Area",
+  "shapeLengthFieldName": "Shape__Length",
+  "units": "esriMeters"
+ },
+ "geometryType": "esriGeometryPolygon",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "sqlType": "sqlTypeOther",
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "GlobalID",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "GlobalID",
+   "sqlType": "sqlTypeOther",
+   "length": 38,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "End_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "Pressure Restored Datetime",
+   "sqlType": "sqlTypeOther",
+   "length": 8,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "Begin_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "Pressure Dropped Datetime",
+   "sqlType": "sqlTypeOther",
+   "length": 8,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "Public_Begin_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "Advisory In Effect Datetime",
+   "sqlType": "sqlTypeOther",
+   "length": 8,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "Advisory_Title",
+   "type": "esriFieldTypeString",
+   "alias": "Advisory Title",
+   "sqlType": "sqlTypeOther",
+   "length": 50,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "Advisory_Details",
+   "type": "esriFieldTypeString",
+   "alias": "Advisory Details",
+   "sqlType": "sqlTypeOther",
+   "length": 256,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "Adv_Status",
+   "type": "esriFieldTypeString",
+   "alias": "Advisory Status",
+   "sqlType": "sqlTypeOther",
+   "length": 100,
+   "domain": {
+    "type": "codedValue",
+    "name": "Adv_Status_Domain",
+    "codedValues": [
+     {
+      "name": "Draft",
+      "code": "draft"
+     },
+     {
+      "name": "In Effect/Active",
+      "code": "active"
+     },
+     {
+      "name": "Testing",
+      "code": "testing"
+     },
+     {
+      "name": "Lifted/Canceled",
+      "code": "canceled"
+     },
+     {
+      "name": "Archived",
+      "code": "archived"
+     }
+    ]
+   },
+   "defaultValue": null
+  },
+  {
+   "name": "Public_End_DT",
+   "type": "esriFieldTypeDate",
+   "alias": "Advisory Canceled Datetime",
+   "sqlType": "sqlTypeOther",
+   "length": 8,
+   "domain": null,
+   "defaultValue": null
+  },
+  {
+   "name": "Adv_Type",
+   "type": "esriFieldTypeString",
+   "alias": "Advisory Type",
+   "sqlType": "sqlTypeOther",
+   "length": 100,
+   "domain": {
+    "type": "codedValue",
+    "name": "SWB_Advisory_Area_Adv_Type_42323d38-8652-4af6-8abe-5d9d01b5371a",
+    "codedValues": [
+     {
+      "name": "Precautionary Boil Water Advisory",
+      "code": "BWA"
+     },
+     {
+      "name": "Boil Water Order",
+      "code": "BWO"
+     }
+    ]
+   },
+   "defaultValue": null,
+   "description": "null"
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 144,
+    "GlobalID": "ef948cb3-6c42-4769-ac55-9ed466c12b92",
+    "End_DT": null,
+    "Begin_DT": null,
+    "Public_Begin_DT": 1737698400000,
+    "Advisory_Title": "Testing- Precautionary BWA - East Bank of NO",
+    "Advisory_Details": "Testing - Precautionary Boil Water Advisory - Entire East Bank of New Orleans",
+    "Adv_Status": "archived",
+    "Public_End_DT": null,
+    "Adv_Type": "BWA"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -90.1369006606451,
+       29.9531478757889
+      ],
+      [
+       -90.1260100996655,
+       29.9726251393723
+      ],
+      [
+       -90.1204122359127,
+       30.0291412245079
+      ],
+      [
+       -90.0151838118404,
+       30.0385038069701
+      ],
+      [
+       -89.8840345198489,
+       30.1095117144577
+      ],
+      [
+       -89.8201764876219,
+       30.1855138261131
+      ],
+      [
+       -89.7233594710206,
+       30.1772039475809
+      ],
+      [
+       -89.7425855452393,
+       30.095848881298
+      ],
+      [
+       -89.9396528059808,
+       29.9802333730153
+      ],
+      [
+       -89.9901212508054,
+       29.9879650932283
+      ],
+      [
+       -90.0103772932857,
+       29.9493004736547
+      ],
+      [
+       -90.0505460554929,
+       29.9620912052541
+      ],
+      [
+       -90.0629056746332,
+       29.9570346010831
+      ],
+      [
+       -90.0605024153559,
+       29.9353180244458
+      ],
+      [
+       -90.0701154524653,
+       29.9225238494421
+      ],
+      [
+       -90.0948346907469,
+       29.9147870388195
+      ],
+      [
+       -90.1236738020743,
+       29.9130015356099
+      ],
+      [
+       -90.1350034529531,
+       29.9174652336076
+      ],
+      [
+       -90.1377500349849,
+       29.9534650785655
+      ],
+      [
+       -90.1367200667235,
+       29.9528701456862
+      ],
+      [
+       -90.1369006606451,
+       29.9531478757889
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 163,
+    "GlobalID": "5218b091-af9e-4bc3-ae87-5d1a3473d747",
+    "End_DT": null,
+    "Begin_DT": null,
+    "Public_Begin_DT": 1771826400000,
+    "Advisory_Title": "Lifted BWA for East Bank",
+    "Advisory_Details": "Lifted/Canceled - Precautionary Boil Water Advisory for Significant Portion of East Bank",
+    "Adv_Status": "archived",
+    "Public_End_DT": null,
+    "Adv_Type": "BWA"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -90.1341926540306,
+       29.9420155686423
+      ],
+      [
+       -90.1341672676658,
+       29.9420677128331
+      ],
+      [
+       -90.1341623726065,
+       29.9420437931967
+      ],
+      [
+       -90.1341926540306,
+       29.9420155686423
+      ]
+     ],
+     [
+      [
+       -90.1175103877233,
+       29.9117236208086
+      ],
+      [
+       -90.1301253527047,
+       29.9150770342947
+      ],
+      [
+       -90.1340091920128,
+       29.9195610934093
+      ],
+      [
+       -90.133361169398,
+       29.9241639791856
+      ],
+      [
+       -90.1334255424143,
+       29.9244987259447
+      ],
+      [
+       -90.1341623726065,
+       29.9420437931967
+      ],
+      [
+       -90.134163686204,
+       29.942075069238
+      ],
+      [
+       -90.1341672676658,
+       29.9420677128331
+      ],
+      [
+       -90.1361496824345,
+       29.9517542809081
+      ],
+      [
+       -90.1295129870478,
+       29.9579402726598
+      ],
+      [
+       -90.1237689316066,
+       29.9531499725349
+      ],
+      [
+       -90.1076763334153,
+       29.9677348210394
+      ],
+      [
+       -90.0916946527696,
+       29.9560900272491
+      ],
+      [
+       -90.0844119253683,
+       29.9520175625832
+      ],
+      [
+       -90.0779875048512,
+       29.959248607
+      ],
+      [
+       -90.0727046150724,
+       29.9557265755115
+      ],
+      [
+       -90.0636934676547,
+       29.9660448384415
+      ],
+      [
+       -90.0564675975104,
+       29.9612531151431
+      ],
+      [
+       -90.0627868825223,
+       29.955208809004
+      ],
+      [
+       -90.0627782923815,
+       29.9527491576518
+      ],
+      [
+       -90.0625165150683,
+       29.9500319389088
+      ],
+      [
+       -90.0633533695198,
+       29.9379434532542
+      ],
+      [
+       -90.0631023079446,
+       29.9501314043291
+      ],
+      [
+       -90.0640872208581,
+       29.9266782708521
+      ],
+      [
+       -90.0724685883738,
+       29.9207457774938
+      ],
+      [
+       -90.0802233902917,
+       29.9180713902469
+      ],
+      [
+       -90.0998142449368,
+       29.9127744789335
+      ],
+      [
+       -90.1175103877233,
+       29.9117236208086
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 167,
+    "GlobalID": "f1ca0fdf-5069-45d0-a29e-696c6d37bfe2",
+    "End_DT": null,
+    "Begin_DT": null,
+    "Public_Begin_DT": 1773032400000,
+    "Advisory_Title": "Precautionary BWA for Portion of East Bank",
+    "Advisory_Details": "Precautionary BWA for Portion of East Bank",
+    "Adv_Status": "archived",
+    "Public_End_DT": null,
+    "Adv_Type": "BWA"
+   },
+   "geometry": {
+    "rings": [
+     [
+      [
+       -90.1208896433803,
+       29.9125659643388
+      ],
+      [
+       -90.1297302042937,
+       29.9150954288341
+      ],
+      [
+       -90.1349658762901,
+       29.9223114891093
+      ],
+      [
+       -90.1374549662565,
+       29.952761963397
+      ],
+      [
+       -90.1307601725551,
+       29.9645112413708
+      ],
+      [
+       -90.12463933763,
+       29.9595151900427
+      ],
+      [
+       -90.1301335882957,
+       29.9638197050637
+      ],
+      [
+       -90.130691488098,
+       29.9642361127533
+      ],
+      [
+       -90.1205634865021,
+       29.956108418178
+      ],
+      [
+       -90.1203746592496,
+       29.95603405374
+      ],
+      [
+       -90.12463933763,
+       29.9595151900427
+      ],
+      [
+       -90.1201772287597,
+       29.9560191776672
+      ],
+      [
+       -90.095354992604,
+       29.9796717012075
+      ],
+      [
+       -90.1025218550916,
+       29.9841621446361
+      ],
+      [
+       -90.0995435343929,
+       30.0117397222284
+      ],
+      [
+       -90.099449124041,
+       30.0118512063087
+      ],
+      [
+       -90.095290628101,
+       30.0115018896157
+      ],
+      [
+       -90.0911321321611,
+       30.0124011938509
+      ],
+      [
+       -90.0882095976114,
+       30.0115316206017
+      ],
+      [
+       -90.0849094085557,
+       30.011167437806
+      ],
+      [
+       -90.0464572601179,
+       30.013397108466
+      ],
+      [
+       -90.0296344451764,
+       30.0165185631856
+      ],
+      [
+       -90.0215663604601,
+       29.9862660446678
+      ],
+      [
+       -90.0227679900987,
+       29.9809132878191
+      ],
+      [
+       -89.9984435761277,
+       29.9737163521052
+      ],
+      [
+       -90.0105457032027,
+       29.9495492622016
+      ],
+      [
+       -90.0278148440108,
+       29.9572090044497
+      ],
+      [
+       -90.0451526430831,
+       29.9609271142623
+      ],
+      [
+       -90.055109002946,
+       29.9609271142623
+      ],
+      [
+       -90.0620612887128,
+       29.9564653657986
+      ],
+      [
+       -90.0618037966474,
+       29.9451613734786
+      ],
+      [
+       -90.0607738283859,
+       29.9354180860444
+      ],
+      [
+       -90.0687389152281,
+       29.9239778012281
+      ],
+      [
+       -90.0850467460389,
+       29.9170594365817
+      ],
+      [
+       -90.1038093363734,
+       29.9127891549669
+      ],
+      [
+       -90.1208896433803,
+       29.9125659643388
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
